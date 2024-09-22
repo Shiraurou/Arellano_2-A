@@ -5,131 +5,181 @@
     <title>Page title</title>
 </head>
 <style>
-body{   
-    margin: 0;
-    padding: 0;
-}
-h1{
-    margin: 0;
-}
-header{     
-    display: flex;
-    flex-wrap: no-wrap;
-    background-color: #af78f0;
-    justify-content:space-between;
+body{    
     
 }
-.left{
-    display: flex;
-    margin: 15px;
-    
-     
-}
-.right{
-    display: flex;
-    margin: 5px;
-    align-items: center;    
-    
-}
-button{    
-    height: 50px;
-    width: 50px;
+*{
     margin: 0;
+    
 }
-#logo{    
-    margin: 5px;
-    height: 10vw;
-    width: 10vw;
-    background: no-repeat;
-    <!-- background-position: center;
-    background-attachment: fixed;
-    background-size: cover; -->
+.header{
+    display: flex;
     margin:0;
-    border-radius: 10px 10px 10px;
+    background-color: #b33fe0;
+    padding: 1vw;
 }
-#title{    
-    color: #642491;
-    font-size: 5vw;
-             
-         
-}
-#search{
-    padding: 5px;
-    margin: 5px;
-    font-size: 4vw;
-}
-#menu{
-    padding: 15px 5px;
-    
-    
-}
-button{
-    background-color:#af40ff;
-}
-
-.image{
-    height: 65vw;
+#logoimg{    
+    height: 10vw;
     background: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
-    margin:0;
+    background-size:cover;
+    margin: 0;
+    border-radius: 80px;
+}   
+#logo{
+    background-image: linear-gradient(#7a00ff, #ce55ff, #ffaaf4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+    height: 10vw;
+    width: 10vw;
+    overflow: hidden;
+}
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+#png{
+    height: 5vw;
+    width: 5vw;
+}
+#right{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+#title{
+   background-image: linear-gradient(to right, #7a00ff, #ce55ff, #ffaaf4);
+   background-clip: text;
+   color: transparent;
+}
+input{
+    width: 6vw;
+    margin: 1vw;
+}
+img{
+    scroll-snap-align: center;  
+    background: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    margin: 0;
+    width: 40vw;
+}
+#image{
+    display: flex;
+    gap: 1vw;
+    width: 40vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 3vw
     
 }
-.content{
-    background-color: #9a20be;
+.section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;    
+    height: auto;
+    background: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
     margin:0;
-    padding: 25px
-    
+    padding: 0;
 }
-.body{
-    background-color: #ba55ff;
-    height: 75vw;
-    border-radius: 15px;        
-    font-size: 4vw;
+#content{
+    display: flex;
+    flex-wrap: wrap;
 }
+.card{
+    backdrop-filter: blur(20px);
+    margin: 2vw;
+    border: 1vw solid;
+    border-color: #7553af;
+    color: #e034f0;
+    padding: 1vw;
+}
+
+
 footer{
     margin: 0;
-    padding 25px;
-    background-color: #c415ff;
-    height: 20vw;
-    font-size: 4vw;
-    
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#b33fe0 ;
 }
 </style>
 <body>
-    <header>
-        <div class="left">
-            <div id="logo" class="head" style="background-image:url(shion.jpeg);">
+    <div class="header">
+        <div id="left">
+            <div id="logo" class="head-item">
+                <img id="logoimg" src="image/shion2.jpeg">
+            </div>
+            <div id="title" class="head-item">
+                <h1>Shion.WIKI</h1>
+            </div>
+        </div>
+        <div id="right">
+            <div id="search" class="head-item">
+                <input type="search" placeholder="Search....">
+            </div>
+            <div id="menu" class="head-item">
+                <img id="png" src="image/menu.png" alt="menu">
+            </div>
+        </div>
+    </div>
+    <div class="section" style="background-image:url(image/shionbgw.jpg);">
+        <div id="image">
+            <img src="image/shion.jpeg">
+            <img src="image/shion2.jpeg">
+            <img src="image/shion3.jpeg">
+            <img src="image/shion4.jpeg">
+            <img src="image/shion5.jpeg">
             
         </div>
-            <div id="title" class="head">
-            <h1> SHION WIKI </h1>
-            </div>
+        <div id="content">
+                <div class="card">
+                    <h1>Back story</h1>                
+                    <h4>Shion ｢紫苑シオン, shion, lit. "Aster tataricus"｣ is the First Secretary of Rimuru Tempest and an executive within the Jura-Tempest Federation's upper management. She is counted in the ranks of the Twelve Guardian Lords and Rimuru's Big Four, as well as leading her own personal army. She resides in the capital of Tempest, Rimuru City.</h4>                        
+                 </div>
+                 <div class="card">
+                    <h1>Abilities</h1>                
+                    <h4>Shion is a specialist melee fighter that is prided in her brute strength and swordsmanship. Shion uses a big and heavy sword to compliment her strength, she can hold it easily with one hand. Combination of her brute strength and massive sword with her skill with a blade make her a fearsome enemy to fight.</h4>                        
+                 </div>
+                 <div class="card">
+                    <h1>Skills</h1>                
+                    <h4>Ultimate skills</h4>
+                        <h4>Susanoo, Lord of Tyranny</h4>
+                        <h4>Action Alteration ｢行動改変, kōdō kaihen｣</h4>
+                        <h4>Certain Outcome ｢確定結果, kakutei kekka｣</h4>
+                        <h4>Demon Lord's Haki ｢魔王覇気, maō haki｣</h4>
+                        <h4>Fantasy Destruction ｢幻想破壊, gensō hakai｣</h4>
+                        <h4>Imaginary Counter ｢虚無相殺, kyomu sōsai｣</h4>
+                        <h4>Infinite Regeneration ｢無限再生, mugen saisei｣</h4>
+                        <h4>Multidimensional Barrier ｢多次元結界, tajigen kekkai｣</h4>
+                        <h4>Spacetime Manipulation ｢時空間操作, jikūkan sōsa｣</h4>
+                        <h4>Thought Acceleration ｢思考加速, shikō kasoku｣</h4>
+                        <h4>Universal Perception ｢万能感知, ban'nō kanchi｣</h4>
+                        <h4>Extra skills</h4>
+                        <h4>All-Seeing Eye ｢天眼, tengan｣</h4>
+                        <h4>Mortal Fear ｢恐怖覇気モータルフィア, mōtaru fia｣</h4>    </h4>                    
+
+                 </div>
+                 
+     
+            
         </div>
-        <div class="right">
-            <div id="search" class="head">
-            <h1> 🔎 </h1>
-        </div>
-        <div id="menu" class="head">
-            <button>menu</button>            
-        </div>
-        </div>
-    </header>
-    <section>
-        <div class="image" style="background-image:url(shion.jpeg);">
-           
-        
-        </div>
-        <div class="content">
-            <div class ="body">
-                <h1> Content </h1>
-            </div>
-        </div>    
-    </section>
+    </div>
     <footer>
-        <h1> footer </h1>
+        <h1> footer</h1>
     </footer>
-        
 </body>
 </html>
